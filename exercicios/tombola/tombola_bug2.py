@@ -7,7 +7,9 @@ Testando um tômbola com bug
 
 Para começar, vamos criar uma instância de tômbola. Nessa implementação,
 é opcional fornecer uma sequência de itens ao construtor::
-
+[Adicinei a importação da Tombola para rodar os teste e nenhum dos testes 
+falharam..]
+    >>> from tombola_bug2 import Tombola
     >>> t1 = Tombola()
     >>> t1.carregada()
     False

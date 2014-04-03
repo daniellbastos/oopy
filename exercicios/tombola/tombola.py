@@ -16,5 +16,5 @@ class Tombola(object):
         return bool(self.itens)
 
     def __iter__(self):
-        for i in self.itens:
+        for i in reversed(self.itens):
             yield i

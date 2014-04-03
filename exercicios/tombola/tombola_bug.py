@@ -21,7 +21,7 @@ Vamos tirar a última bola::
 
 Agora veja o que aconteceu com a lista ``bolas``::
 
-    >>> bolas       #doctest: -SKIP
+    >>> bolas       #doctest: +SKIP
     [77, 88]
 
 (veja nota no final deste texto para enteder o -SKIP)
@@ -30,7 +30,7 @@ Porque isso aconteceu?
 
 Dica: a explicação começa por aqui::
 
-    >>> t.itens is bolas
+    >>> t.itens is bolas    #doctest: +SKIP
     True
 
 Isso é um problema porque o usuário da tômbola provavelmente não espera
@@ -52,7 +52,7 @@ class Tombola(object):
     '''IMPLEMENTACAO COM BUG!!!'''
 
     def __init__(self, seq):
-        self.itens = seq
+        self.itens = list(seq)
 
     def carregar(self, seq):
         self.itens.extend(seq)

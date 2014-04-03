@@ -10,7 +10,8 @@ exerício 2.2). Se tal tômbola for utilizada em dois laços ``for``, as
 iterações serão independentes ou não?
 
 Em termos práticos, sua implementação apresenta este comportamento::
-
+[Adicinei a importação da Tombola para rodar os teste]    
+    >>> from tombola import Tombola
     >>> t = Tombola()
     >>> t.carregar([1, 2, 3])
     >>> for i in t:
@@ -35,3 +36,4 @@ Ou este outro comportamento? ::
     3
     2
     1
+     
