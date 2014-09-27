@@ -4,6 +4,7 @@ from collections import namedtuple
 
 Carta = namedtuple('Carta', 'valor naipe')
 
+
 class Baralho:
     valores = [str(n) for n in range(2, 11)] + list('JQKA')
     naipes = 'paus ouros copas espadas'.split()
@@ -17,6 +18,5 @@ class Baralho:
     def __getitem__(self, pos):
         return self.cartas[pos]
 
-
-
-
+    def __setitem__(self, pos, el):
+        self.cartas[pos] = el
